@@ -11,5 +11,6 @@
 
 
 # Mathematical Symbols
+ 
 
 Click [here](assets/math_symbols.html) to access the full list of symbols.
