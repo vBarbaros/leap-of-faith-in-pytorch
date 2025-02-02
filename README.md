@@ -13,4 +13,4 @@
 # Mathematical Symbols
  
 
-Click [here](assets/math_symbols.html) to access the full list of symbols.
+Click [here](assets/math-to-text.html) to access the full list of symbols.
