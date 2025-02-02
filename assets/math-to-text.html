@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Mathematical Symbols</title>
+    <style>
+        body { font-size: 24px; font-family: Arial, sans-serif; padding: 20px; }
+        .char { margin: 10px; padding: 10px; border: 1px solid #ddd; display: inline-block; cursor: pointer; }
+        .char:hover { background-color: #f0f0f0; }
+    </style>
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Copied: ' + text);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Click to Copy Mathematical Symbols</h2>
+
+    <h3>Basic Symbols</h3>
+    <div class="char" onclick="copyToClipboard('±')">± (Plus-Minus)</div>
+    <div class="char" onclick="copyToClipboard('∞')">∞ (Infinity)</div>
+    <div class="char" onclick="copyToClipboard('∑')">∑ (Summation)</div>
+    <div class="char" onclick="copyToClipboard('∏')">∏ (Product)</div>
+    <div class="char" onclick="copyToClipboard('∫')">∫ (Integral)</div>
+    <div class="char" onclick="copyToClipboard('∂')">∂ (Partial Derivative)</div>
+    <div class="char" onclick="copyToClipboard('Δ')">Δ (Delta - Change)</div>
+    <div class="char" onclick="copyToClipboard('∇')">∇ (Nabla - Gradient)</div>
+
+    <h3>Greek Letters</h3>
+    <div class="char" onclick="copyToClipboard('α')">α (Alpha)</div>
+    <div class="char" onclick="copyToClipboard('β')">β (Beta)</div>
+    <div class="char" onclick="copyToClipboard('γ')">γ (Gamma)</div>
+    <div class="char" onclick="copyToClipboard('θ')">θ (Theta)</div>
+    <div class="char" onclick="copyToClipboard('λ')">λ (Lambda)</div>
+    <div class="char" onclick="copyToClipboard('μ')">μ (Mu)</div>
+    <div class="char" onclick="copyToClipboard('π')">π (Pi)</div>
+    <div class="char" onclick="copyToClipboard('ρ')">ρ (Rho)</div>
+    <div class="char" onclick="copyToClipboard('σ')">σ (Sigma)</div>
+    <div class="char" onclick="copyToClipboard('φ')">φ (Phi)</div>
+    <div class="char" onclick="copyToClipboard('ω')">ω (Omega)</div>
+
+    <h3>Logic & Set Theory</h3>
+    <div class="char" onclick="copyToClipboard('∈')">∈ (Element of)</div>
+    <div class="char" onclick="copyToClipboard('∉')">∉ (Not an element of)</div>
+    <div class="char" onclick="copyToClipboard('∩')">∩ (Intersection)</div>
+    <div class="char" onclick="copyToClipboard('∪')">∪ (Union)</div>
+    <div class="char" onclick="copyToClipboard('⊂')">⊂ (Subset)</div>
+    <div class="char" onclick="copyToClipboard('⊃')">⊃ (Superset)</div>
+    <div class="char" onclick="copyToClipboard('⊆')">⊆ (Subset or equal)</div>
+    <div class="char" onclick="copyToClipboard('⊇')">⊇ (Superset or equal)</div>
+    <div class="char" onclick="copyToClipboard('∅')">∅ (Empty set)</div>
+    <div class="char" onclick="copyToClipboard('∀')">∀ (For all)</div>
+    <div class="char" onclick="copyToClipboard('∃')">∃ (There exists)</div>
+    <div class="char" onclick="copyToClipboard('∴')">∴ (Therefore)</div>
+    <div class="char" onclick="copyToClipboard('∵')">∵ (Because)</div>
+
+    <h3>Comparisons</h3>
+    <div class="char" onclick="copyToClipboard('≈')">≈ (Approximately equal)</div>
+    <div class="char" onclick="copyToClipboard('≠')">≠ (Not equal)</div>
+    <div class="char" onclick="copyToClipboard('≤')">≤ (Less than or equal)</div>
+    <div class="char" onclick="copyToClipboard('≥')">≥ (Greater than or equal)</div>
+
+    <h3>Advanced Mathematical Symbols</h3>
+    <div class="char" onclick="copyToClipboard('⊕')">⊕ (Direct sum)</div>
+    <div class="char" onclick="copyToClipboard('⊗')">⊗ (Tensor product)</div>
+    <div class="char" onclick="copyToClipboard('⊥')">⊥ (Perpendicular)</div>
+    <div class="char" onclick="copyToClipboard('∝')">∝ (Proportional to)</div>
+    <div class="char" onclick="copyToClipboard('ℝ')">ℝ (Real numbers)</div>
+    <div class="char" onclick="copyToClipboard('ℕ')">ℕ (Natural numbers)</div>
+    <div class="char" onclick="copyToClipboard('ℤ')">ℤ (Integers)</div>
+    <div class="char" onclick="copyToClipboard('ℚ')">ℚ (Rational numbers)</div>
+    <div class="char" onclick="copyToClipboard('ℂ')">ℂ (Complex numbers)</div>
+
+    <h3>Machine Learning Symbols</h3>
+    <div class="char" onclick="copyToClipboard('ŷᵢ')">ŷᵢ (Predicted y_i)</div>
+    <div class="char" onclick="copyToClipboard('yᵢ')">yᵢ (Actual y_i)</div>
+    <div class="char" onclick="copyToClipboard('∇J(θ)')">∇J(θ) (Gradient of cost function)</div>
+
+</body>
+</html>
